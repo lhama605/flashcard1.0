@@ -1,0 +1,109 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6f0fa;
+  text-align: center;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.flashcard {
+  width: 100%;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.flashcard.ativo .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card-front {
+  background-color: #d0e6ff;
+  color: #1c1c1c;
+}
+
+.card-back {
+  background-color: #4f81c7;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Tag "Português" discreta */
+.card-front .tag-topo {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  font-size: 9px;
+  color: #333;
+  background: transparent;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-weight: normal;
+  opacity: 0.6;
+  user-select: none;
+  pointer-events: none;
+}
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #cddff1;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  border-top: 1px solid #aac4de;
+}
+
+.nomes-finais {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.creditos {
+  font-style: italic;
+  font-size: 13px;
+  color: #555;
+}
