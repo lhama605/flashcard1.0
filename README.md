@@ -128,3 +128,12 @@
   </script>
 </body>
 </html>
+<!-- Rodapé com nomes -->
+<footer>
+  <div class="nomes-finais">
+    Alana C. Queiroz, Emily K. Gomes, Kethlyn S. De Paiva – 2ºJ
+  </div>
+  <div class="creditos">
+    Desenvolvido por Alura. Projeto fictício sem fins comerciais.
+  </div>
+</footer>
